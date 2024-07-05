@@ -1,6 +1,9 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
+import Footer from "./component/Footers";
+import Card from "./component/Card";
 
 import Navbar from "./component/navbar";
 import BootstrapClient from "./component/BootstrapClient"
@@ -19,6 +22,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         {children}
         <BootstrapClient />
+        <Footer/>
         </body>
     </html>
   );
